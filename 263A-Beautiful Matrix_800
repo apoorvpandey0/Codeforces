@@ -1,0 +1,11 @@
+a = []
+mr,mc = 2,2
+oR,oC = -1,-1
+for i in range(5):
+    row = list(map(lambda x:int(x), input().strip().split()))
+    if 1 in row:
+        oC = row.index(1)
+        oR = i
+
+print(abs(oR-mr) + abs(oC-mc))
+        
