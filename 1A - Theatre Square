@@ -1,0 +1,8 @@
+from math import ceil
+# n,m,a = list(map(lambda x:int(x),input().strip().split()))
+n,m,a = [6,6,4]
+R = 1
+sqs = 0
+Rvar = ceil(m/a)
+Cvar = ceil(n/a)
+print(Rvar*Cvar)
