@@ -1,0 +1,19 @@
+from sys import maxsize
+N,A = list(map( lambda x: int(x),input().strip().split()))
+inc = list(map( lambda x: int(x),input().strip().split()))
+dec = list(map( lambda x: int(x),input().strip().split()))
+inc.insert(0,maxsize)
+dec.insert(0,maxsize)
+if inc[1] == 0:
+  print("NO")
+elif inc[A]:
+  print('YES')
+elif inc[A] == 0 and dec[A] == 0:
+  print("NO")
+elif inc[A] == 0 and dec[A] == 1:
+  for i in range(A,N+1):
+    if inc[i] == 1 and dec[i] == 1:
+      print("YES")
+      break
+  else:
+    print("NO")
